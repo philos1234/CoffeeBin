@@ -10,11 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AmountController {
 
-
-
     @PostMapping("/api/amount")
     public AmountSaveRequestDto saveAmount(@RequestBody AmountSaveRequestDto amountSaveRequestDto) {
-        System.out.println(amountSaveRequestDto);
+
         return amountSaveRequestDto;
     }
 
