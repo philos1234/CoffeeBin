@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AmountController {
 
-    Boolean isOk = true;
 
-    @PostMapping("/amount")
-    public Boolean saveAmount(@RequestBody AmountSaveRequestDto amountSaveRequestDto) {
+
+    @PostMapping("/api/amount")
+    public String saveAmount(@RequestBody AmountSaveRequestDto amountSaveRequestDto) {
         System.out.println(amountSaveRequestDto);
-        return isOk;
+        return "hello!!";
     }
 
 
