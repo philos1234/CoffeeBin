@@ -13,9 +13,9 @@ public class AmountController {
 
 
     @PostMapping("/api/amount")
-    public String saveAmount(@RequestBody AmountSaveRequestDto amountSaveRequestDto) {
+    public AmountSaveRequestDto saveAmount(@RequestBody AmountSaveRequestDto amountSaveRequestDto) {
         System.out.println(amountSaveRequestDto);
-        return "hello!!";
+        return amountSaveRequestDto;
     }
 
 
