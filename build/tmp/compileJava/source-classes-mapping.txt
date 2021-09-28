@@ -8,3 +8,5 @@ com/cofeeBin/web/dto/AmountSaveRequestDto.java
  com.cofeeBin.web.dto.AmountSaveRequestDto
 com/cofeeBin/web/GPSController.java
  com.cofeeBin.web.GPSController
+com/cofeeBin/web/IndexController.java
+ com.cofeeBin.web.IndexController
