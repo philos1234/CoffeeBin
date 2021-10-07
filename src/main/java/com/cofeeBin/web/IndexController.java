@@ -20,4 +20,5 @@ public class IndexController {
     public String hello(){
         return "Server Connected!!";
     }
+
 }

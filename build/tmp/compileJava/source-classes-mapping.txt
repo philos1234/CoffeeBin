@@ -1,12 +1,12 @@
-com/cofeeBin/web/IndexController.java
- com.cofeeBin.web.IndexController
+com/cofeeBin/web/GPSController.java
+ com.cofeeBin.web.GPSController
 com/cofeeBin/Application.java
  com.cofeeBin.Application
 com/cofeeBin/web/PointController.java
  com.cofeeBin.web.PointController
 com/cofeeBin/web/dto/AmountSaveRequestDto.java
  com.cofeeBin.web.dto.AmountSaveRequestDto
-com/cofeeBin/web/GPSController.java
- com.cofeeBin.web.GPSController
+com/cofeeBin/web/IndexController.java
+ com.cofeeBin.web.IndexController
 com/cofeeBin/web/AmountController.java
  com.cofeeBin.web.AmountController

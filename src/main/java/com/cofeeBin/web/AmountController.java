@@ -1,7 +1,9 @@
 package com.cofeeBin.web;
 
 import com.cofeeBin.web.dto.AmountSaveRequestDto;
+import com.cofeeBin.web.dto.forTest;
 import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +17,13 @@ public class AmountController {
 
         return amountSaveRequestDto;
     }
+
+    @PostMapping("/api/and/amount")
+    public forTest android(@RequestBody forTest  tt){
+
+        return tt;
+    }
+
 
 
 }
