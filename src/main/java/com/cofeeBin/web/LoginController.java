@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class LoginController {
 
 
-    @PostMapping("/kakoLogin")
+    @PostMapping("/kakaoLogin")
     public KakaoLoginDto kakaoLogin(@RequestBody KakaoLoginDto kakaoLoginDto){
 
         return kakaoLoginDto;
