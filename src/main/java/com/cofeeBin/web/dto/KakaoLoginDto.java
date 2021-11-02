@@ -8,7 +8,7 @@ import lombok.RequiredArgsConstructor;
 public class KakaoLoginDto {
 
     private final String phoneNum;
-    private final String SerialNum;
+    private final String serialNum;
 
 
 
