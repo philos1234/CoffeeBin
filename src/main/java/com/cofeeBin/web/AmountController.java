@@ -19,8 +19,7 @@ public class AmountController {
     }
 
     @PostMapping("/api/and/amount")
-    public forTest android(@RequestBody forTest  tt){
-
+    public forTest android(@RequestBody forTest tt){
         return tt;
     }
 
