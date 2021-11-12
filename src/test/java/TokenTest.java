@@ -1,16 +1,13 @@
 
 import com.cofeeBin.Application;
 import com.cofeeBin.service.JwtService;
-import com.cofeeBin.service.JwtServiceImpl;
-import com.cofeeBin.web.dto.KakaoLoginDto;
+import com.cofeeBin.web.dto.login.KakaoLoginDto;
 import lombok.extern.slf4j.Slf4j;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -25,7 +22,7 @@ public class TokenTest {
 
 
     @Autowired
-    private JwtServiceImpl jwtService;
+    private JwtService jwtService;
 
     @Test
     public void TokenDecodetests() throws Exception {

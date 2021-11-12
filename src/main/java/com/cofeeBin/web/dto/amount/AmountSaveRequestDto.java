@@ -1,4 +1,4 @@
-package com.cofeeBin.web.dto;
+package com.cofeeBin.web.dto.amount;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

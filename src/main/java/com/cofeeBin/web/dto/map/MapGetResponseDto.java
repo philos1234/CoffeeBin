@@ -1,4 +1,4 @@
-package com.cofeeBin.web.dto;
+package com.cofeeBin.web.dto.map;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

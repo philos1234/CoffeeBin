@@ -1,7 +1,6 @@
 package com.cofeeBin.service;
 
-import com.cofeeBin.web.dto.AppRequestDto;
-import com.cofeeBin.web.dto.KakaoLoginDto;
+import com.cofeeBin.web.dto.login.KakaoLoginDto;
 import org.springframework.stereotype.Service;
 
 

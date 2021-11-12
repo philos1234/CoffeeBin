@@ -1,16 +1,11 @@
 package com.cofeeBin.service;
 
 
-import com.cofeeBin.web.dto.AppRequestDto;
-import com.cofeeBin.web.dto.KakaoLoginDto;
+import com.cofeeBin.web.dto.login.KakaoLoginDto;
 import io.jsonwebtoken.*;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
-import javax.crypto.SecretKey;
-import javax.xml.bind.DatatypeConverter;
-import java.security.Key;
 import java.util.HashMap;
 import java.util.Map;
 

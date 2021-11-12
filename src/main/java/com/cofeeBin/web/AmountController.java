@@ -1,8 +1,6 @@
 package com.cofeeBin.web;
 
-import com.cofeeBin.web.dto.AmountGetResponseDto;
-import com.cofeeBin.web.dto.AmountSaveRequestDto;
-import com.cofeeBin.web.dto.AppRequestDto;
+import com.cofeeBin.web.dto.amount.AmountSaveRequestDto;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
