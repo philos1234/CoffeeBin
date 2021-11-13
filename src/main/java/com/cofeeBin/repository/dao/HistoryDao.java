@@ -33,7 +33,7 @@ public class HistoryDao {
     public int createHistory(int userIdx,int plusPoint, int curPoint)
     {
         Object[] param = new Object[]{userIdx,plusPoint,curPoint};
-        return this.jdbcTemplate.update("insert into History(u_id,plus_point,cur_point) VALUES (?,?,?,?)",param);
+        return this.jdbcTemplate.update("insert into History(u_id,plus_point,cur_point) VALUES (?,?,?)",param);
 
     }
 

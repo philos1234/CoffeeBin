@@ -1,6 +1,7 @@
 package com.cofeeBin.service;
 
 import com.cofeeBin.repository.dao.HistoryDao;
+import com.cofeeBin.repository.dao.UserDao;
 import com.cofeeBin.web.dto.point.PointGetResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,10 +13,11 @@ public class PointService {
 
 
     private HistoryDao historyDao;
-
+    private UserDao userDao;
     @Autowired
-    public PointService(HistoryDao historyDao){
+    public PointService(HistoryDao historyDao,UserDao userDao){
         this.historyDao = historyDao;
+        this.userDao = userDao;
     }
 
 
@@ -36,6 +38,14 @@ public class PointService {
             historyDao.createHistory(userIdx, plus_point, cur_point);
         }catch (Exception exception){
             throw new Exception("히스토리 생성 exception");
+        }
+    }
+
+    public void updateUserPoint(int userIdx,int point)throws Exception{
+        try{
+            userDao.updatePoint(userIdx,point);
+        }catch (Exception e){
+            throw e;
         }
     }
 }

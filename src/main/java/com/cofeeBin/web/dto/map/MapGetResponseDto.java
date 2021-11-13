@@ -8,6 +8,7 @@ import lombok.RequiredArgsConstructor;
 @AllArgsConstructor
 public class MapGetResponseDto {
 
+    private String name;
     private int latitude;
     private int longitude;
 

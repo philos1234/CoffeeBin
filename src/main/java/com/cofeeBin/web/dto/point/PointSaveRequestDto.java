@@ -10,4 +10,6 @@ import lombok.Setter;
 public class PointSaveRequestDto {
     private String phone_number;
 
+    public PointSaveRequestDto(){};
+
 }

@@ -11,9 +11,11 @@ import com.cofeeBin.web.dto.point.PointSaveRequestDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+@RestController
 public class PointController {
 
     private JwtServiceImpl jwtServiceImple;
@@ -56,7 +58,7 @@ public class PointController {
            User user = userService.getUserByPhoneNumber(phoneNum);
            int plus_point = 30;
            pointService.createHistory(user.getUserIdx(),plus_point,user.getPoint()+plus_point); //포인트 증가시키고 저장
-
+           pointService.updateUserPoint(user.getUserIdx(),user.getPoint()+plus_point);
            return "ok";
        }catch (Exception e){
 

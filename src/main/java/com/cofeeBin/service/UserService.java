@@ -2,6 +2,7 @@ package com.cofeeBin.service;
 
 import com.cofeeBin.repository.dao.UserDao;
 import com.cofeeBin.web.dto.User;
+import com.cofeeBin.web.dto.login.KakaoLoginDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +18,18 @@ public class UserService {
         this.userDao = userDao;
     }
 
+
+
+    public void createUserByKakao(KakaoLoginDto kakaoLoginDto,String token) throws Exception {
+        try{
+
+           int ret = userDao.createUserByKakao(kakaoLoginDto,token);
+            if(ret == 0)throw new Exception();
+
+        }catch (Exception e){
+            throw e;
+        }
+    }
 
     public User getUserByEmail(String email) throws Exception {
 
@@ -34,11 +47,12 @@ public class UserService {
 
     public User getUserByPhoneNumber(String phoneNumber) throws Exception{
         try{
+            System.out.println("폰번호 at Service"+phoneNumber);
             User ret = userDao.getUserByPhoneNumber(phoneNumber);
             return ret;
 
         }catch (Exception exception){
-            throw  new Exception(exception.toString());
+            throw new Exception(exception.toString());
         }
     }
 }
