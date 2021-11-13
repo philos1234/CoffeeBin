@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor //모든 final 필드가 포함된 생성자 형성
 public class AmountGetResponseDto {
 
-    private final String plastic_amount;
-    private final String paper_amount;
+    private final String name;
+    private final int plastic_amount;
+    private final int paper_amount;
 }
