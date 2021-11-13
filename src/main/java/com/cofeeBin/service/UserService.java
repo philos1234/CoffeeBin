@@ -47,7 +47,7 @@ public class UserService {
 
     public User getUserByPhoneNumber(String phoneNumber) throws Exception{
         try{
-            System.out.println("폰번호 at Service"+phoneNumber);
+
             User ret = userDao.getUserByPhoneNumber(phoneNumber);
             return ret;
 
@@ -55,4 +55,18 @@ public class UserService {
             throw new Exception(exception.toString());
         }
     }
+
+    public boolean checkUser(KakaoLoginDto kakaoLoginDto){
+        try{
+            if(userDao.checkUserByEmail(kakaoLoginDto.getEmail()) == 1){
+                return true;
+            }
+            else return false;
+
+        }catch (Exception e){
+            throw e;
+        }
+
+    }
+
 }

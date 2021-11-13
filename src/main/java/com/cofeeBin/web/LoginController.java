@@ -2,6 +2,7 @@ package com.cofeeBin.web;
 
 import com.cofeeBin.service.JwtServiceImpl;
 import com.cofeeBin.service.UserService;
+import com.cofeeBin.web.dto.User;
 import com.cofeeBin.web.dto.login.KakaoLoginDto;
 
 import com.cofeeBin.web.dto.login.LoginResponseDto;
@@ -24,8 +25,18 @@ public class LoginController {
     @PostMapping("/kakaoLogin")
     public LoginResponseDto KakaoLogin(@RequestBody KakaoLoginDto kakaoLoginDto) throws Exception {
        try{
-        String token = jwtServiceImple.makeJwt(kakaoLoginDto);
-        userService.createUserByKakao(kakaoLoginDto,token);
+           String token;
+           //이미 있는 유저인지 확인
+        if(userService.checkUser(kakaoLoginDto)){
+
+            User user = userService.getUserByEmail(kakaoLoginDto.getEmail());
+            token = user.getToken();
+        }
+        else{
+            token = jwtServiceImple.makeJwt(kakaoLoginDto);
+            userService.createUserByKakao(kakaoLoginDto,token);
+        }
+
         LoginResponseDto loginResponseDto = new LoginResponseDto(token);
 
         return loginResponseDto;

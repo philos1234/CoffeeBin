@@ -61,4 +61,9 @@ public class UserDao {
 
 
     }
+
+    public int checkUserByEmail(String email) {
+
+        return this.jdbcTemplate.queryForObject("select exists(select email from User where email = ?)",int.class,email);
+    }
 }
