@@ -24,8 +24,8 @@ public class BinDao {
         return this.jdbcTemplate.query(query,((rs, rowNum) ->
                 new MapGetResponseDto(
                         rs.getString("name"),
-                        rs.getInt("latitude"),
-                        rs.getInt("longitude"))
+                        rs.getString("latitude"),
+                        rs.getString("longitude"))
         ));
     }
 

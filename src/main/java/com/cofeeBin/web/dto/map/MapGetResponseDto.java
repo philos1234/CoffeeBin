@@ -9,7 +9,7 @@ import lombok.RequiredArgsConstructor;
 public class MapGetResponseDto {
 
     private String name;
-    private int latitude;
-    private int longitude;
+    private String latitude;
+    private String longitude;
 
 }

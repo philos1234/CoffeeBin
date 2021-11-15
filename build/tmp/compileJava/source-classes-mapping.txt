@@ -6,12 +6,14 @@ com/cofeeBin/web/dto/point/PointGetResponseDto.java
  com.cofeeBin.web.dto.point.PointGetResponseDto
 com/cofeeBin/web/dto/login/KakaoLoginDto.java
  com.cofeeBin.web.dto.login.KakaoLoginDto
+com/cofeeBin/WebConfig.java
+ com.cofeeBin.WebConfig
 com/cofeeBin/web/dto/User.java
  com.cofeeBin.web.dto.User
-com/cofeeBin/web/dto/amount/AmountSaveRequestDto.java
- com.cofeeBin.web.dto.amount.AmountSaveRequestDto
-com/cofeeBin/service/UserService.java
- com.cofeeBin.service.UserService
+com/cofeeBin/web/AmountController.java
+ com.cofeeBin.web.AmountController
+com/cofeeBin/web/MapController.java
+ com.cofeeBin.web.MapController
 com/cofeeBin/Application.java
  com.cofeeBin.Application
 com/cofeeBin/service/MapService.java
@@ -36,13 +38,11 @@ com/cofeeBin/service/JwtService.java
  com.cofeeBin.service.JwtService
 com/cofeeBin/web/dto/point/PointSaveRequestDto.java
  com.cofeeBin.web.dto.point.PointSaveRequestDto
-com/cofeeBin/web/AmountController.java
- com.cofeeBin.web.AmountController
-com/cofeeBin/WebConfig.java
- com.cofeeBin.WebConfig
 com/cofeeBin/web/PointController.java
  com.cofeeBin.web.PointController
 com/cofeeBin/web/LoginController.java
  com.cofeeBin.web.LoginController
-com/cofeeBin/web/MapController.java
- com.cofeeBin.web.MapController
+com/cofeeBin/service/UserService.java
+ com.cofeeBin.service.UserService
+com/cofeeBin/web/dto/amount/AmountSaveRequestDto.java
+ com.cofeeBin.web.dto.amount.AmountSaveRequestDto
